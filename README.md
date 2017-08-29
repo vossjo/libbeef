@@ -10,6 +10,7 @@ Basic installation instructions:
 make
 make install
 ```
+You can add <tt>--enable-optmax</tt> to the configure flags, but this may break the code if it is run on older or different CPUs than the library was compiled on.
 
 To link it to the DFT code, add the following to the linker flags:
 -Lyourbeefpath/lib -lbeef
@@ -23,3 +24,7 @@ yourbeefpath/bin/bee 1 H2/output.log -2 H/out.log
 ```
 will e.g. calculate the Bayesian error estimate on the formation of H2
 from 2H.
+
+# DFT codes with interfaces to <tt>libbeef</tt>
+- All recent versions of [VASP](https://www.vasp.at/) (V5.4.x and up) have interfaces to <tt>libbeef.</tt> Add <tt>-Dlibbeef</tt> to the preprocessor flags and <tt>-Lyourbeefpath/lib -lbeef</tt> to the linker library flags to enable <tt>libbeef.</tt>
+- For usage of <tt>libbeef</tt> with [Quantum Espresso](http://www.quantum-espresso.org/) find instructions and QE 5.x source code [here](https://github.com/vossjo/ase-espresso/wiki#installation) and QE 6.x source code [here](https://github.com/vossjo/q-e).
