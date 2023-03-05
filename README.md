@@ -27,4 +27,4 @@ from 2H.
 
 # DFT codes with interfaces to <tt>libbeef</tt>
 - All recent versions of [VASP](https://www.vasp.at/) (V5.4.x and up) have interfaces to <tt>libbeef.</tt> Add <tt>-Dlibbeef</tt> to the preprocessor flags and <tt>-Lyourbeefpath/lib -lbeef</tt> to the linker library flags to enable <tt>libbeef.</tt> Instructions on where to define these variables for V6.x.x can be found at this [link](https://www.vasp.at/wiki/index.php/Makefile.include#Libbeef_.28optional.29).
-- <tt>libbeef</tt> is automatically enabled in [Quantum ESPRESSO](https://www.quantum-espresso.org/) version 6.6. or higher (use `input_dft = 'BEEF-vdW'`). For usage of <tt>libbeef</tt> with earlier versions: QE 5.x source code [here](https://github.com/vossjo/ase-espresso/wiki#installation) and QE 6.x source code [here](https://github.com/vossjo/q-e).
+- <tt>libbeef</tt> is automatically enabled in [Quantum ESPRESSO](https://www.quantum-espresso.org/) version 6.6. or higher (use `input_dft = 'BEEF-vdW'`). For usage of <tt>libbeef</tt> with earlier versions: QE 5.x source code [here](https://github.com/vossjo/ase-espresso/wiki#installation).
